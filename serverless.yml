@@ -1,0 +1,22 @@
+service: openai-azure-proxy
+
+provider:
+  name: cloudflare
+  stage: prod
+  config:
+    accountId: ${env:CLOUDFLARE_ACCOUNT_ID}
+    zoneId: ${env:CLOUDFLARE_ZONE_ID}
+  environment:
+    RESOURCE_NAME: ${env:RESOURCE_NAME}
+    DEPLOY_NAME_GPT35: ${env:DEPLOY_NAME_GPT35}
+    DEPLOY_NAME_GPT4: ${env:DEPLOY_NAME_GPT4}
+
+plugins:
+  - serverless-cloudflare-workers
+
+functions:
+  openai-azure-proxy:
+    name: ${self:service}
+    script: cf-openai-azure-proxy
+    events:
+      - http: true
