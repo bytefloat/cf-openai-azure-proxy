@@ -37,8 +37,8 @@ async function handleRequest(request) {
     body = await request.json();
   }
 
-  const modelName = body?.model;  
-  const deployName = mapper[modelName] || '' 
+  const modelName = body?.model;
+  const deployName = mapper[modelName] || ''
 
   if (deployName === '') {
     return new Response('Missing model mapper', {
@@ -69,7 +69,7 @@ async function handleRequest(request) {
 
   if (body?.stream != true){
     return response
-  } 
+  }
 
   let { readable, writable } = new TransformStream()
   stream(response.body, writable);
@@ -122,7 +122,7 @@ async function stream(readable, writable) {
 async function handleModels(request) {
   const data = {
     "object": "list",
-    "data": []  
+    "data": []
   };
 
   for (let key in mapper) {
@@ -147,7 +147,7 @@ async function handleModels(request) {
       }],
       "root": key,
       "parent": null
-    });  
+    });
   }
 
   const json = JSON.stringify(data, null, 2);
