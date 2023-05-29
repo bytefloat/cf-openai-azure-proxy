@@ -30,7 +30,9 @@ jobs:
           CLOUDFLARE_AUTH_EMAIL: ${{ secrets.CLOUDFLARE_AUTH_EMAIL }}
 
       - name: Deploy
-        run: serverless deploy
+        run: |
+          sls plugin install -n serverless-cloudflare-workers
+          sls deploy
         env:
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
