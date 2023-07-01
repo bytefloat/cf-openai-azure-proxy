@@ -5,7 +5,13 @@ const resourceName = RESOURCE_NAME;
 const mapper = {
   'gpt-3.5-turbo': DEPLOY_NAME_GPT35,
   'gpt-3.5-turbo-0301': DEPLOY_NAME_GPT35,
-  'gpt-4': DEPLOY_NAME_GPT4
+  'gpt-3.5-turbo-0613': DEPLOY_NAME_GPT35,
+  'gpt-3.5-turbo-16k': DEPLOY_NAME_GPT35,
+  'gpt-3.5-turbo-16k-0613': DEPLOY_NAME_GPT35,
+  'gpt-4': DEPLOY_NAME_GPT4,
+  'gpt-4-0613': DEPLOY_NAME_GPT4,
+  'gpt-4-32k': DEPLOY_NAME_GPT4,
+  'gpt-4-32k-0613': DEPLOY_NAME_GPT4
 };
 
 const apiVersion = "2023-06-01-preview";
