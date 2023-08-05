@@ -14,7 +14,7 @@ const mapper = {
   'gpt-4-32k-0613': DEPLOY_NAME_GPT4
 };
 
-const apiVersion = "2023-06-01-preview";
+const apiVersion = "2023-07-01-preview";
 
 addEventListener("fetch", (event) => {
   event.respondWith(handleRequest(event.request));
