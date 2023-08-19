@@ -59,6 +59,10 @@ Take OpenCat as an example: fill in the custom API domain name with the domain n
 
 I have tried multiple clients. If you encounter problems with other clients, please feel free to create an issue.
 
+### Update
+
+In your forked repository, click the `sync fork` button to synchronize with this repository.
+
 [CLOUDFLARE_AUTH_KEY]: https://dash.cloudflare.com/profile/api-tokens
 [Global API Key]: https://dash.cloudflare.com/profile/api-tokens
 [CLOUDFLARE_AUTH_EMAIL]: https://dash.cloudflare.com/profile

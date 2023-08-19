@@ -60,6 +60,10 @@
 
 我已经尝试了多种客户端, 如果遇到其他客户端有问题, 欢迎创建issue.
 
+### 更新
+
+在你 fork 的仓库中, 点击 `sync fork` 按钮, 即可与本仓库同步。
+
 [CLOUDFLARE_AUTH_KEY]: https://dash.cloudflare.com/profile/api-tokens
 [Global API Key]: https://dash.cloudflare.com/profile/api-tokens
 [CLOUDFLARE_AUTH_EMAIL]: https://dash.cloudflare.com/profile
