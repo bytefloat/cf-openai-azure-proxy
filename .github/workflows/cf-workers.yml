@@ -3,6 +3,7 @@ name: Cloudflare Workers
 on:
   push:
     branches: [ main ]
+  workflow_dispatch:
 
 defaults:
   run:
