@@ -39,7 +39,7 @@ jobs:
           CLOUDFLARE_AUTH_EMAIL: ${{ secrets.CLOUDFLARE_AUTH_EMAIL }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_ZONE_ID: ${{ secrets.CLOUDFLARE_ZONE_ID }}
-          CLOUDFLARE_WORKER_NAME: ${{ secrets.CLOUDFLARE_WORKER_NAME }}
+          CLOUDFLARE_WORKER_NAME: ${{ secrets.CLOUDFLARE_WORKER_NAME == '' && 'openai-azure-proxy' || secrets.CLOUDFLARE_WORKER_NAME }}
           RESOURCE_NAME: ${{ secrets.RESOURCE_NAME }}
           DEPLOY_NAME_GPT35: ${{ secrets.DEPLOY_NAME_GPT35 }}
           DEPLOY_NAME_GPT4: ${{ secrets.DEPLOY_NAME_GPT4 }}
