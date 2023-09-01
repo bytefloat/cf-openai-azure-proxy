@@ -6,12 +6,12 @@ const mapper = {
   'gpt-3.5-turbo': DEPLOY_NAME_GPT35,
   'gpt-3.5-turbo-0301': DEPLOY_NAME_GPT35,
   'gpt-3.5-turbo-0613': DEPLOY_NAME_GPT35,
-  'gpt-3.5-turbo-16k': DEPLOY_NAME_GPT35,
-  'gpt-3.5-turbo-16k-0613': DEPLOY_NAME_GPT35,
+  'gpt-3.5-turbo-16k': DEPLOY_NAME_GPT35_16K,
+  'gpt-3.5-turbo-16k-0613': DEPLOY_NAME_GPT35_16K,
   'gpt-4': DEPLOY_NAME_GPT4,
   'gpt-4-0613': DEPLOY_NAME_GPT4,
-  'gpt-4-32k': DEPLOY_NAME_GPT4,
-  'gpt-4-32k-0613': DEPLOY_NAME_GPT4
+  'gpt-4-32k': DEPLOY_NAME_GPT4_32K,
+  'gpt-4-32k-0613': DEPLOY_NAME_GPT4_32K
 };
 
 const apiVersion = "2023-07-01-preview";

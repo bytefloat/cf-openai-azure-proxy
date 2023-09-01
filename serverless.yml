@@ -9,7 +9,9 @@ provider:
   environment:
     RESOURCE_NAME: ${env:RESOURCE_NAME}
     DEPLOY_NAME_GPT35: ${env:DEPLOY_NAME_GPT35}
-    DEPLOY_NAME_GPT4: ${env:DEPLOY_NAME_GPT4}
+    DEPLOY_NAME_GPT35_16K: ${ env:DEPLOY_NAME_GPT35_16K }
+    DEPLOY_NAME_GPT4: ${ env:DEPLOY_NAME_GPT4 }
+    DEPLOY_NAME_GPT4_32K: ${ env:DEPLOY_NAME_GPT4_32K }
 
 plugins:
   - serverless-cloudflare-workers

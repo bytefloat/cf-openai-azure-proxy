@@ -42,4 +42,6 @@ jobs:
           CLOUDFLARE_WORKER_NAME: ${{ secrets.CLOUDFLARE_WORKER_NAME == '' && 'openai-azure-proxy' || secrets.CLOUDFLARE_WORKER_NAME }}
           RESOURCE_NAME: ${{ secrets.RESOURCE_NAME }}
           DEPLOY_NAME_GPT35: ${{ secrets.DEPLOY_NAME_GPT35 }}
+          DEPLOY_NAME_GPT35_16K: ${{ secrets.DEPLOY_NAME_GPT35_16K }}
           DEPLOY_NAME_GPT4: ${{ secrets.DEPLOY_NAME_GPT4 }}
+          DEPLOY_NAME_GPT4_32K: ${{ secrets.DEPLOY_NAME_GPT4_32K }}
